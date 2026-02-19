@@ -11,3 +11,11 @@ app.get("/home",(req,resp)=>{
     console.log(req.url)
     resp.send("response from server for /home")
 })
+app.get("/home/page1",(req,resp)=>{
+    console.log(req.url)
+    console.log(req.method)
+    console.log(req.body)
+    console.log(req.headers.authorization)
+    resp.send("response from server for /home/page1")
+})
+
