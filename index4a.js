@@ -23,6 +23,6 @@ app.listen(8080, () => {
 //   resp.send(result);
 // });
 
-app.get("/a/b/c/d", (req, resp) => {
+app.get("/:a/:b/:c/:d", (req, resp) => {
   resp.send("hello student");
 });
