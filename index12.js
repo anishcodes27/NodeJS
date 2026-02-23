@@ -1,6 +1,8 @@
 //router
 import productRouter from './routes/productRouter.js'
 import userRouter from './routes/userRouter.js'
+import users from './models/userModel.js'
+import products from './models/productModel.js'
 import express from 'express'
 const app=express()
 app.listen(8080,()=>{
